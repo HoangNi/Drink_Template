@@ -1,0 +1,116 @@
+@import "variable-color";
+@import "variable-size";
+@import "reponsive";
+@import "font";
+.brandlogo{
+    padding: $size-five 0 $size-five 0;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.footer{
+    &__above{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        h3{
+            letter-spacing: 1.722px;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-family: "Times New Roman";
+            color: $color_black;
+        }
+        &__card{
+            width: 20%;
+            li{
+                display: block;
+                text-align: left;
+                margin-left: -$size-four;
+                a{
+                    font-size: $size-textsmall;
+                    text-transform: uppercase;
+                    color: $color_text;
+                    &:hover{
+                        text-decoration: none;
+                        color: $color_yelow;
+                    }
+                }
+            }
+        }
+        &__sendemail{
+            width: 30%;
+            &__button{
+                position: relative;
+                width: 100%;
+                display: flex;
+                input{
+                    width: 70%;
+                    margin-bottom: $size-two;
+                    height: $size-three;
+                    padding-left: $size-one;
+                }
+                img{
+                    width: 16%;
+                    height: $size-three;
+                }
+                span{
+                    position: absolute;
+                    top:5px;
+                    right:20%;
+                    z-index: 999;
+                    color: $color_white;
+                    font-size: $size-pub;
+                    text-transform: uppercase;
+                }
+            }
+            ul{
+                text-align: left;
+                transform: translate(-10% ,0px);
+                li{
+                    display: inline;
+                    margin-right: $size-one;
+                   
+                    i{
+                        color: $color_text;
+                        &:hover{
+                            color: $color_yelow;
+                        }
+                    }
+                }
+            }
+            
+        }
+        &__contact{
+            width: 30%;
+            overflow: hidden;
+            p{
+                color: $color_text;
+                line-height: 2em;
+                font-style: normal;
+                a{
+                    color: $color_yelow2;
+                }
+            }
+        }
+    }
+    &__under{
+        display: flex;
+        &__left{
+            width: 70%;
+            p{
+                font-size: $size-pub;
+                color: $color_text;
+                &:hover{
+                    color: $color_yelow;
+                }
+            }
+        }
+        &__right{
+            width: 30%;
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
